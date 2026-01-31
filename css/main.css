@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --white-clr: #fff;
+  --black-clr: #000;
+  --orange-clr: #e96c38;
+  --grey-clr: #636363;
+  --light-grey: #cacaca;
+  --dawn-pink: #fae7e5;
+  --froest-min: #dcfef9;
+
+  --fs-xlarge: 2.5rem;
+  --fs-large: 2rem;
+  --fs-medium: 1rem;
+  --fs-small: 0.875rem;
+
+  --space-xlarge: 3rem;
+  --space-large: 2rem;
+  --space-medium: 1rem;
+  --space-small: 0.5rem;
+
+  --margin-xlarge: var(--space-xlarge);
+  --margin-large: var(--space-large);
+  --margin-medium: var(--space-medium);
+  --margin-small: var(--space-small);
+
+  --padding-xlarge: var(--space-xlarge);
+  --padding-large: var(--space-large);
+  --padding-medium: var(--space-medium);
+  --padding-small: var(--space-small);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black-clr);
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* button classes */
+.btn {
+  background-color: var(--orange-clr);
+  color: var(--white-clr);
+  outline: none;
+  padding: 0.8rem 1.3rem;
+  border: none;
+  color: var(--white-clr);
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.secondray-btn {
+  background-color: transparent;
+  border: 2px solid var(--orange-clr);
+  color: var(--orange-clr);
+}
+/* button classes */
+
+html {
+  scroll-behavior: smooth;
+}
+/* header navbar section */
+header {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #636363; */
+  padding: 1.5rem;
+}
+
+.navbar .logo-txt {
+  color: var(--orange-clr);
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.navbar .logo-txt span {
+  color: var(--black-clr);
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 1.9rem;
+}
+
+.nav-links li a {
+  color: var(--black-clr);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s linear;
+}
+
+.nav-links li .active,
+.nav-links li a:hover {
+  color: var(--orange-clr);
+}
+
+
+main {
+  width: 100%;
+}
