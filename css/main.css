@@ -18,7 +18,7 @@
   --dawn-pink: #fae7e5;
   --froest-min: #dcfef9;
 
-  --fs-xlarge: 2.5rem;
+  --fs-xlarge: 3rem;
   --fs-large: 2rem;
   --fs-medium: 1rem;
   --fs-small: 0.875rem;
@@ -38,6 +38,7 @@
   --padding-medium: var(--space-medium);
   --padding-small: var(--space-small);
 }
+
 h1,
 h2,
 h3,
@@ -62,6 +63,11 @@ h6 {
   border-radius: 999px;
   cursor: pointer;
   font-weight: 600;
+  transition: all .3s linear;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
 }
 
 .secondray-btn {
@@ -74,6 +80,8 @@ h6 {
 html {
   scroll-behavior: smooth;
 }
+
+
 /* header navbar section */
 header {
   width: 100%;
@@ -113,7 +121,90 @@ header {
   color: var(--orange-clr);
 }
 
+.nav-icons {
+
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-icons .icon {
+  background-color: var(--orange-clr);
+  color: var(--white-clr);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.nav-icons .icon:hover {
+  border: 2px solid var(--orange-clr);
+  background-color: var(--white-clr);
+  color: var(--orange-clr);
+  transform: translateY(-2px);
+}
+
+/* mobile menu */
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
 
 main {
   width: 100%;
+}
+
+/* hero-section */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.content {
+  flex: 1;
+  /* line-height: 2.5rem; */
+}
+.content h1 {
+  margin-bottom: 1.2rem;
+  font-size: var(--fs-xlarge);
+}
+.content p {
+  color: var(--grey-clr);
+  margin-bottom: 1.3rem;
+}
+
+.content .watch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1.2rem;
+}
+.content .watch a {
+  background-color: var(--orange-clr);
+   width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-clr);
+  border-radius: 50%;
+}
+
+.img-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  /* background-color: navajowhite; */
 }
