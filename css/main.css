@@ -47,6 +47,10 @@ h5,
 h6 {
   color: var(--black-clr);
 }
+
+p {
+  color: var(--grey-clr);
+}
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -85,8 +89,10 @@ html {
 /* header navbar section */
 header {
   width: 100%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.068);
 }
 .navbar {
+  /* position: fixed; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -155,6 +161,7 @@ header {
 
 main {
   width: 100%;
+  overflow: hidden;
 }
 
 /* hero-section */
@@ -163,11 +170,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 8rem;
+  animation: fadeInUp 1s ease forwards;
 }
 .content {
   flex: 1;
   position: relative;
+  /* animation: fadeInUp 1s ease forwards; */
 }
 .content::before {
   content: "";
@@ -237,12 +246,13 @@ img {
 
 /* store section */
 .store-section {
-  margin-top: 7rem;
+  margin-top: 13rem;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+   animation: fadeInUp 1s ease forwards;
 }
 
 .section-header {
@@ -266,7 +276,7 @@ img {
   margin-top: 2rem;
   flex-wrap: wrap;
   gap: 6rem;
-   scrollbar-width: none;
+  
 }
 
 .card-container .card-items {
@@ -277,5 +287,83 @@ img {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.094);
   padding: 1.1rem 3.3rem;
   border-radius: 5px;
-  scrollbar-width: none;
+}
+/* about */
+.about-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 13rem;
+  animation: fadeInUp 1s ease forwards;
+  animation-timeline: initial;
+}
+
+.img-containe {
+  width: 100%;
+}
+
+.about-content h3,
+p {
+  margin-bottom: 1.1rem;
+}
+
+.about-content h3 {
+  font-size: var(--fs-large);
+}
+.about-content p {
+  font-size: 0.9rem;
+}
+
+/* featured-section */
+
+.featured-section {
+  margin-top: 13rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.grid-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.274);
+  border-radius: 5px;
+  padding-bottom: 1rem;
+}
+
+.grid-img {
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.grid-img img {
+  border-radius: 5px;
+  
+}
+.grid-content {
+  text-align: center;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
