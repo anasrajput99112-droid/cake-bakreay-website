@@ -63,7 +63,7 @@ h6 {
   border-radius: 999px;
   cursor: pointer;
   font-weight: 600;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .btn:hover {
@@ -80,7 +80,6 @@ h6 {
 html {
   scroll-behavior: smooth;
 }
-
 
 /* header navbar section */
 header {
@@ -122,7 +121,6 @@ header {
 }
 
 .nav-icons {
-
   display: flex;
   gap: 1rem;
 }
@@ -137,7 +135,7 @@ header {
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 .nav-icons .icon:hover {
@@ -188,7 +186,7 @@ main {
 }
 .content .watch a {
   background-color: var(--orange-clr);
-   width: 30px;
+  width: 30px;
   height: 30px;
   display: flex;
   align-items: center;
@@ -207,4 +205,47 @@ img {
   max-width: 100%;
   height: auto;
   /* background-color: navajowhite; */
+}
+
+/* store section */
+.store-section {
+  margin-top: 7rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.section-header p {
+  /* text-align: center; */
+  max-width: 600px;
+  margin: auto;
+  font-size: 0.9rem;
+}
+
+.card-container {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.card-container .card-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.094);
+  padding: 1.1rem 3.3rem;
+  border-radius: 5px;
 }
