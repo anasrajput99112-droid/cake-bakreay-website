@@ -64,6 +64,7 @@ h6 {
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s linear;
+  margin: 0.3rem;
 }
 
 .btn:hover {
@@ -166,8 +167,21 @@ main {
 }
 .content {
   flex: 1;
-  /* line-height: 2.5rem; */
+  position: relative;
 }
+.content::before {
+  content: "";
+  position: absolute;
+  z-index: -9;
+  top: 10px;
+  left: -100px;
+  width: 500px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(100px);
+  background-color: var(--dawn-pink);
+}
+
 .content h1 {
   margin-bottom: 1.2rem;
   font-size: var(--fs-xlarge);
@@ -200,7 +214,21 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
+
+.img-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: var(--froest-min);
+  filter: blur(100px);
+  z-index: -9;
+  width: 600px;
+  height: 200px;
+  left: 100px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -238,6 +266,7 @@ img {
   margin-top: 2rem;
   flex-wrap: wrap;
   gap: 6rem;
+   scrollbar-width: none;
 }
 
 .card-container .card-items {
@@ -248,4 +277,5 @@ img {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.094);
   padding: 1.1rem 3.3rem;
   border-radius: 5px;
+  scrollbar-width: none;
 }
